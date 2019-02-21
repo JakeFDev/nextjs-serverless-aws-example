@@ -1,0 +1,15 @@
+service: nextjs-serverless
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: production
+  region: us-east-1
+  environment:
+    NODE_ENV: production
+
+functions:
+  server:
+    handler: lambda.handler
+    events:
+      - http: ANY /
+      - http: ANY /{proxy+}

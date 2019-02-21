@@ -1,0 +1,20 @@
+{
+  "name": "nextjs-lambda",
+  "version": "1.0.0",
+  "description": "An example for nextjs serverless mode for aws lambda",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Jacob Fulton",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "next": "^8.0.1",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "serverless-http": "^1.9.1"
+  }
+}
