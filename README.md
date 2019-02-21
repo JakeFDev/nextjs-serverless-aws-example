@@ -15,7 +15,7 @@ This is the easy part. Just create a next.config.js file and set the target to '
 2. **Create an express server that is wrapped with serverless-http**
 Thanks to the [serverless-http](https://github.com/dougmoscrop/serverless-http) package, we can create a normal express server thats ready for aws lambda without any extra thought on our end. I made my server in lambda.js
 3. **Define a serverless.yml that serves as a config file for our deployment**
-The serverless.js file is our basic config file for our deployment that the serverless frame utilizes. It includes some basic parameters like service name, runtime, region, environment variables, and also importantly our server handler.
+The serverless.js file is our basic config file for our deployment that the serverless package utilizes. It includes some basic parameters like service name, runtime, region, environment variables, and also importantly our server handler.
 At this point you can deploy using  
 ```sh $ sls deploy ```
 4. **Serve our nextjs static files in s3**
